@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is Docker and rails app format.<br>
+Please use this freely.
 
-Things you may want to cover:
+### Step 1. Create Docker Image
+Let's create a Docker image.
 
-* Ruby version
+```
+docker-compose build
+```
 
-* System dependencies
+### Step 2. Start  Docker Container
+Let's start the Docker container.
 
-* Configuration
+```
+docker-compose up
+```
 
-* Database creation
+### Step 3. Create Database
+Let's create a database for rails.
 
-* Database initialization
+```
+docker-compose run web rake db:create
+```
 
-* How to run the test suite
+### <font color="Navy">※ reference</font><br>
+https://docs.docker.com/samples/rails/
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<br>
+Have a nice development !
